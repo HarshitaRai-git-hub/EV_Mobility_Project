@@ -1,0 +1,7 @@
+stage,stage_name,features_used,num_features,mae,rmse,r2,mae_reduction_pct
+Stage 1,Baseline,,0,18.789575,22.501500811057028,-0.5464002195044495,0.0
+Stage 2,+ Weather,"thermal_stress_index, ambient_temp_c",2,17.04979507522583,19.51380974081474,-0.16300896843419288,9.259283005465365
+Stage 3,+ Road Quality,"thermal_stress_index, ambient_temp_c, roughness_score, pothole_density_per_km",4,16.3005226234436,19.02851331184868,-0.10588164009752021,13.246986036439875
+Stage 4,+ Traffic,"thermal_stress_index, ambient_temp_c, roughness_score, pothole_density_per_km, traffic_factor, idle_fraction, avg_moving_speed_kmh, num_stops",8,16.356761989593505,18.832622523942465,-0.08322963853775689,12.94767449719589
+Stage 5,+ Driving Style,"thermal_stress_index, ambient_temp_c, roughness_score, pothole_density_per_km, traffic_factor, idle_fraction, avg_moving_speed_kmh, num_stops, aggressiveness_score, hard_braking_pct",10,16.373069191741944,18.91219665278843,-0.09240299295611654,12.860885934131321
+Stage 6,Full Model,"thermal_stress_index, ambient_temp_c, roughness_score, pothole_density_per_km, traffic_factor, idle_fraction, avg_moving_speed_kmh, num_stops, aggressiveness_score, hard_braking_pct, load_factor, load_ratio, distance_km",13,10.218544865417481,13.363813708455202,0.45454395769894385,45.61588079870098
